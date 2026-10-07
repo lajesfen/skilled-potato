@@ -5,7 +5,7 @@
   "type": "module",
   "description": "CLI that installs curated Claude Code skills from this repo into a project's .claude/skills/",
   "bin": {
-    "potato": "./dist/index.js"
+    "skilled-potato": "./dist/index.js"
   },
   "files": [
     "dist"
@@ -19,16 +19,15 @@
     "generate-manifest": "bun run scripts/generate-manifest.ts"
   },
   "dependencies": {
-    "chalk": "^5",
-    "prompts": "^2.4.2"
+    "@clack/prompts": "^1.8.1",
+    "chalk": "^5"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.12",
     "@types/node": "^20.14.0",
-    "@types/prompts": "^2.4.9",
     "typescript": "^5.6.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.12"
   }
 }
